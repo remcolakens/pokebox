@@ -10,4 +10,6 @@ export type PokemonCardProps = {
 	specialAttack: string;
 	specialDefense: string;
 	speed: string;
+
+	handleOnClick: () => void;
 };

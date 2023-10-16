@@ -10,6 +10,7 @@ export const PokemonCard: FC<PokemonCardProps> = ({
 	specialAttack,
 	specialDefense,
 	speed,
+	handleOnClick,
 }) => {
 	return (
 		<>
@@ -49,7 +50,7 @@ export const PokemonCard: FC<PokemonCardProps> = ({
 			</div>
 
 			<div className="w-full flex justify-center mt-8 col-span-1 md:col-span-2">
-				<Button size="default" variant="default">
+				<Button size="default" variant="default" onClick={handleOnClick}>
 					Gotta Catch &apos;Em All
 				</Button>
 			</div>

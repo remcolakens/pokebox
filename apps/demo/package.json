@@ -8,20 +8,23 @@
 		"dev": "remix dev --manual",
 		"lint": "eslint ./app",
 		"start": "remix-serve ./build/index.js",
+		"codegen": "graphql-codegen",
 		"typecheck": "tsc"
 	},
 	"dependencies": {
+		"@pokebox/pokemon-card": "workspace:*",
 		"@remix-run/css-bundle": "^2.0.1",
 		"@remix-run/node": "^2.0.1",
 		"@remix-run/react": "^2.0.1",
 		"@remix-run/serve": "^2.0.1",
-		"@pokebox/pokemon-card": "workspace:*",
+		"graphql-request": "^6.1.0",
 		"isbot": "^3.6.8"
 	},
 	"devDependencies": {
+		"@graphql-codegen/cli": "^5.0.0",
+		"@graphql-codegen/typescript": "^4.0.1",
 		"@remix-run/dev": "^2.0.1",
-		"@remix-run/eslint-config": "^2.0.1",
-		"eslint": "^8.38.0"
+		"@remix-run/eslint-config": "^2.0.1"
 	},
 	"engines": {
 		"node": ">=18.0.0"
