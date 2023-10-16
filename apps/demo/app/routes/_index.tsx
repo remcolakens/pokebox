@@ -77,7 +77,7 @@ export default function Index() {
 								alt: pokemon.image.alt,
 							}}
 							stats={pokemon.stats}
-							handleOnClick={() => navigate(0)}
+							handleOnClick={() => navigate(restApi ? '/?rest=true' : '/')}
 						/>
 					) : null}
 
