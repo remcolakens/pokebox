@@ -74,6 +74,9 @@ importers:
 
   apps/demo:
     dependencies:
+      '@pokebox/pokemon-card':
+        specifier: workspace:*
+        version: link:../../packages/components/pokemon-card
       '@remix-run/css-bundle':
         specifier: ^2.0.1
         version: 2.0.1
@@ -99,6 +102,16 @@ importers:
       eslint:
         specifier: ^8.38.0
         version: 8.51.0
+
+  packages/components/pokemon-card:
+    dependencies:
+      react:
+        specifier: ^18
+        version: 18.2.0
+    devDependencies:
+      '@pokebox/tsconfig':
+        specifier: workspace:*
+        version: link:../../tsconfig
 
   packages/eslint-config-pokebox:
     dependencies:
