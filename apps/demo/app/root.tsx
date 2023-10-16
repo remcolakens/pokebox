@@ -11,6 +11,18 @@ import {
 import stylesheet from '~/styles/tailwind.css';
 
 export const links: LinksFunction = () => [
+	{
+		rel: 'preconnect',
+		href: 'https://fonts.googleapis.com',
+	},
+	{
+		rel: 'preconnect',
+		href: 'https://fonts.gstatic.com"',
+	},
+	{
+		rel: 'stylesheet',
+		href: 'https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap',
+	},
 	...(cssBundleHref ? [{ rel: 'stylesheet', href: cssBundleHref }] : []),
 	{ rel: 'stylesheet', href: stylesheet },
 ];

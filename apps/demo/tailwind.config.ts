@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 export default {
 	content: [
@@ -10,7 +11,11 @@ export default {
 		'./app/routes/*.{js,jsx,ts,tsx}',
 	],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ['"Play"', ...defaultTheme.fontFamily.sans],
+			},
+		},
 	},
 	plugins: [],
 } satisfies Config;
