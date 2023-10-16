@@ -1,12 +1,12 @@
 {
-	"name": "@pokebox/pokemon-card",
+	"name": "@pokebox/button",
 	"version": "0.0.0",
-	"description": "This card shows some basic information about a Pokemon",
+	"description": "Displays a button or a component that looks like a button.",
 	"author": "Remco Lakens <info@remcolakens.nl>",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/remcolakens/pokebox",
-		"directory": "components/pokemon-card"
+		"directory": "components/button"
 	},
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
@@ -22,9 +22,13 @@
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint \"src/**/*.ts*\""
 	},
+	"dependencies": {
+		"@radix-ui/react-slot": "^1.0.2",
+		"class-variance-authority": "^0.7.0"
+	},
 	"devDependencies": {
 		"@pokebox/tsconfig": "workspace:*",
-		"@pokebox/button": "workspace:*"
+		"@pokebox/utils": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18"

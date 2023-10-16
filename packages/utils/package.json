@@ -1,12 +1,11 @@
 {
-	"name": "@pokebox/pokemon-card",
+	"name": "@pokebox/utils",
 	"version": "0.0.0",
-	"description": "This card shows some basic information about a Pokemon",
-	"author": "Remco Lakens <info@remcolakens.nl>",
+	"description": "A utility library",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/remcolakens/pokebox",
-		"directory": "components/pokemon-card"
+		"directory": "packages/utils"
 	},
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
@@ -22,14 +21,14 @@
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint \"src/**/*.ts*\""
 	},
-	"devDependencies": {
-		"@pokebox/tsconfig": "workspace:*",
-		"@pokebox/button": "workspace:*"
-	},
-	"peerDependencies": {
-		"react": "^18"
-	},
 	"engines": {
-		"node": ">=18.0.0"
+		"node": ">=v18"
+	},
+	"dependencies": {
+		"clsx": "^2.0.0",
+		"tailwind-merge": "^1.14.0"
+	},
+	"devDependencies": {
+		"@pokebox/tsconfig": "workspace:*"
 	}
 }
