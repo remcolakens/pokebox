@@ -3,21 +3,18 @@ import { FC } from 'react';
 import type { PokemonCardProps } from './types';
 
 export const PokemonCard: FC<PokemonCardProps> = ({
-	image,
 	name,
-	hp,
-	attack,
-	specialAttack,
-	specialDefense,
-	speed,
+	image,
+	stats,
 	handleOnClick,
 }) => {
+	const { hp, attack, specialAttack, specialDefense, speed } = stats;
+
 	return (
 		<>
 			<div className="col-span-1 flex justify-center items-center">
 				<img src={image.src} alt={image.alt} className="w-40 object-cover" />
 			</div>
-
 			<div className="grid grid-cols-2 gap-4 col-span-1">
 				<div className="col-span-2">
 					<h4 className="font-bold">Name</h4>
@@ -48,7 +45,6 @@ export const PokemonCard: FC<PokemonCardProps> = ({
 					<span>{speed}</span>
 				</div>
 			</div>
-
 			<div className="w-full flex justify-center mt-8 col-span-1 md:col-span-2">
 				<Button size="default" variant="default" onClick={handleOnClick}>
 					Gotta Catch &apos;Em All

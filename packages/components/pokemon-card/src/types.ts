@@ -1,15 +1,19 @@
-export type PokemonCardProps = {
+export type BasePokemonProps = {
+	id: number;
+	name: string;
 	image: {
 		src: string;
 		alt: string;
 	};
+	stats: {
+		hp: number;
+		attack: number;
+		specialAttack: number;
+		specialDefense: number;
+		speed: number;
+	};
+};
 
-	name: string;
-	hp: string;
-	attack: string;
-	specialAttack: string;
-	specialDefense: string;
-	speed: string;
-
+export type PokemonCardProps = BasePokemonProps & {
 	handleOnClick: () => void;
 };
