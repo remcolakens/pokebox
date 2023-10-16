@@ -18,8 +18,8 @@
 		"@changesets/cli": "^2.26.2",
 		"@commitlint/cli": "^17.8.0",
 		"@commitlint/config-conventional": "^17.8.0",
-		"@pokebox/tsconfig": "workspace:*",
 		"@pokebox/eslint-config-pokebox": "workspace:*",
+		"@pokebox/tsconfig": "workspace:*",
 		"@types/eslint": "^8.44.4",
 		"@types/node": "^20.8.6",
 		"@types/react": "^18.2.28",
@@ -32,6 +32,7 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"rimraf": "^5.0.5",
+		"tailwindcss": "^3.3.3",
 		"tsup": "^7.2.0",
 		"turbo": "^1.10.15",
 		"typescript": "^5.2.2"
