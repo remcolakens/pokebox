@@ -1,0 +1,35 @@
+{
+	"name": "@pokebox/{{dashCase componentName}}",
+	"version": "0.0.0",
+	"description": "{{description}}",
+	"author": "Remco Lakens <info@remcolakens.nl>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/remcolakens/pokebox",
+		"directory": "{{outDir}}/{{dashCase componentName}}"
+	},
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"sideEffects": false,
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --format esm,cjs --dts --external react",
+		"dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+		"clean": "rimraf .turbo node_modules dist",
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint \"src/**/*.ts*\""
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@pokebox/tsconfig": "workspace:*"
+	},
+	"peerDependencies": {
+		"react": "^18"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}

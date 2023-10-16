@@ -1,0 +1,11 @@
+dist
+node_modules
+coverage
+build
+public
+*.hbs
+*.d.ts
+
+**/dist/**
+**/__tmp__/**
+pnpm-lock.yaml

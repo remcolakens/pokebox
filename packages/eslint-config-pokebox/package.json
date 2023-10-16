@@ -1,0 +1,23 @@
+{
+	"name": "@pokebox/eslint-config-pokebox",
+	"version": "0.0.0",
+	"description": "Shareable eslint config for Pokebox projects",
+	"author": "Remco Lakens <info@remcolakens.nl>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/remcolakens/pokebox",
+		"directory": "packages/eslint-config-pokebox"
+	},
+	"main": ".eslintrc.json",
+	"files": [
+		".eslintrc.json"
+	],
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.62.0",
+		"@typescript-eslint/parser": "^5.62.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-config-turbo": "^1.10.15",
+		"eslint-plugin-prettier": "^5.0.1",
+		"eslint-plugin-react": "^7.33.2"
+	}
+}

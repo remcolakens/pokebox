@@ -1,0 +1,11 @@
+{
+	"name": "@pokebox/tsconfig",
+	"version": "0.0.0",
+	"description": "Sharable tsconfig for Pokebox projects",
+	"author": "Remco Lakens <info@remcolakens.nl>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/remcolakens/pokebox",
+		"directory": "packages/eslint-config-pokebox"
+	}
+}
