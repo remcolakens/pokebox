@@ -7,10 +7,11 @@ export type BasePokemonProps = {
 	};
 	stats: {
 		hp: number;
+		speed: number;
+		defense: number;
 		attack: number;
 		specialAttack: number;
 		specialDefense: number;
-		speed: number;
 	};
 };
 

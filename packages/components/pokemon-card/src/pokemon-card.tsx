@@ -9,7 +9,7 @@ export const PokemonCard: FC<PokemonCardProps> = ({
 	stats,
 	handleOnClick,
 }) => {
-	const { hp, attack, specialAttack, specialDefense, speed } = stats;
+	const { defense, hp, attack, specialAttack, specialDefense, speed } = stats;
 
 	return (
 		<>
@@ -20,10 +20,11 @@ export const PokemonCard: FC<PokemonCardProps> = ({
 			<div className="grid grid-cols-2 gap-4 col-span-1">
 				<PokemonStat label="Name" value={name} className="col-span-2" />
 				<PokemonStat label="Hp" value={hp} />
+				<PokemonStat label="Speed" value={speed} />
 				<PokemonStat label="Attack" value={attack} />
+				<PokemonStat label="Defense" value={defense} />
 				<PokemonStat label="Special attack" value={specialAttack} />
 				<PokemonStat label="Special defense" value={specialDefense} />
-				<PokemonStat label="Speed" value={speed} />
 			</div>
 
 			<div className="flex justify-center mt-8 col-span-1 md:col-span-2">
