@@ -29,7 +29,7 @@
 	},
 	"devDependencies": {
 		"@pokebox/tsconfig": "workspace:*",
-		"@pokebox/utils": "workspace:*"
+		"@pokebox/tailwind-utils": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18"

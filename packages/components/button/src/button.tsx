@@ -1,4 +1,4 @@
-import { cn } from '@pokebox/utils';
+import { cn } from '@pokebox/tailwind-utils';
 import { Slot } from '@radix-ui/react-slot';
 import { cva } from 'class-variance-authority';
 import { forwardRef } from 'react';

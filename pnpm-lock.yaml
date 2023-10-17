@@ -19,10 +19,10 @@ importers:
         version: 17.8.0
       '@pokebox/eslint-config-pokebox':
         specifier: workspace:*
-        version: link:packages/eslint-config-pokebox
+        version: link:packages/configs/eslint-config-pokebox
       '@pokebox/tsconfig':
         specifier: workspace:*
-        version: link:packages/tsconfig
+        version: link:packages/configs/tsconfig
       '@testing-library/jest-dom':
         specifier: ^6.1.4
         version: 6.1.4(vitest@0.34.6)
@@ -136,12 +136,12 @@ importers:
         specifier: ^18
         version: 18.2.0
     devDependencies:
+      '@pokebox/tailwind-utils':
+        specifier: workspace:*
+        version: link:../../utilities/tailwind-utils
       '@pokebox/tsconfig':
         specifier: workspace:*
-        version: link:../../tsconfig
-      '@pokebox/utils':
-        specifier: workspace:*
-        version: link:../../utils
+        version: link:../../configs/tsconfig
 
   packages/components/pokemon-card:
     dependencies:
@@ -152,14 +152,14 @@ importers:
       '@pokebox/button':
         specifier: workspace:*
         version: link:../button
+      '@pokebox/tailwind-utils':
+        specifier: workspace:*
+        version: link:../../utilities/tailwind-utils
       '@pokebox/tsconfig':
         specifier: workspace:*
-        version: link:../../tsconfig
-      '@pokebox/utils':
-        specifier: workspace:*
-        version: link:../../utils
+        version: link:../../configs/tsconfig
 
-  packages/eslint-config-pokebox:
+  packages/configs/eslint-config-pokebox:
     dependencies:
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.62.0
@@ -180,9 +180,9 @@ importers:
         specifier: ^7.33.2
         version: 7.33.2(eslint@8.51.0)
 
-  packages/tsconfig: {}
+  packages/configs/tsconfig: {}
 
-  packages/utils:
+  packages/utilities/tailwind-utils:
     dependencies:
       clsx:
         specifier: ^2.0.0
@@ -193,7 +193,7 @@ importers:
     devDependencies:
       '@pokebox/tsconfig':
         specifier: workspace:*
-        version: link:../tsconfig
+        version: link:../../configs/tsconfig
 
 packages:
 
@@ -4471,7 +4471,7 @@ packages:
       supports-color:
         optional: true
     dependencies:
-      ms: 2.1.2
+      ms: 2.1.3
     dev: true
 
   /debug@4.3.4:

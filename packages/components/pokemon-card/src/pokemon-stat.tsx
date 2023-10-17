@@ -1,4 +1,4 @@
-import { cn } from '@pokebox/utils';
+import { cn } from '@pokebox/tailwind-utils';
 import { FC } from 'react';
 import { PokemonStatProps } from './types';
 
