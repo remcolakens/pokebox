@@ -27,7 +27,7 @@ This monorepo include some common tools you'll need to get started, including th
 
 ## Installation
 
-The fastest way to get started is by cloning this monorepo to your local environment. You can achieve this by following these steps:
+To get started with this project, follow these steps:
 
 1. Before you get started, make sure you have `pnpm` installed on your local machine. If you don't have it installed yet, you can follow the installation instructions provided [here](https://pnpm.io/installation)
 2. Clone this repository to your local machine by running the following command in your terminal:
@@ -37,18 +37,23 @@ The fastest way to get started is by cloning this monorepo to your local environ
    ```
 
 3. Once you have cloned the repository, navigate to the project's root and install the dependencies by using: `pnpm install`
-4. You're almost ready! Run `pnpm dev` to start the development server.
+4. Now you will have to build the front-end and packages. You can do this by running `pnpm build`
+5. You're all set! Run `pnpm dev` to start the local development server.
+
+_Note: don't skip the order of the steps above. If you do, you might run into some issues._
 
 ## Apps & Packages
 
 This Turborepo includes the following packages and applications:
 
-- `apps/demo`: Component demostration using Remix framework
-- `packages/components`: Core React components
-- `packages/tsconfig`: Shared Typescript config used throughout the Turborepo
-- `packages/eslint-config-pokebox`: Shared Eslint config used throughout the Turborepo
+- `apps/demo`: A demonstration project showcasing all the components built using the Remix framework.
+- `packages/components`: This directory contains the core React components.
+- `packages/configs`: Contains shareable configuration files for Eslint and Typescript used throughout the Turborepo.
+- `packages/utilities`: This directory houses utility functions used throughout the Turborepo.
 
 ## Useful Commands
+
+Here are some useful commands you can run from the root of the project:
 
 - `pnpm build` - Build all packages
 - `pnpm dev` - Run all packages locally and preview in Remix app
@@ -56,4 +61,4 @@ This Turborepo includes the following packages and applications:
 - `pnpm test` - Run unit tests for all packages
 - `pnpm changeset` - Generate a changeset
 - `pnpm create:pkg` - Generates boilerplate for a new package
-- `pnpm clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
+- `pnpm clean` - Clean up all `node_modules`, `.turbo` and `dist` folders (runs each package's clean script)
