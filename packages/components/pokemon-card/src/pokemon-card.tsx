@@ -46,7 +46,12 @@ export const PokemonCard: FC<PokemonCardProps> = ({
 				</div>
 			</div>
 			<div className="w-full flex justify-center mt-8 col-span-1 md:col-span-2">
-				<Button size="default" variant="default" onClick={handleOnClick}>
+				<Button
+					size="default"
+					variant="default"
+					onClick={handleOnClick}
+					data-testid="random-pokemon-button"
+				>
 					Gotta Catch &apos;Em All
 				</Button>
 			</div>
