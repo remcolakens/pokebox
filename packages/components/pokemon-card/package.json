@@ -25,7 +25,8 @@
 	},
 	"devDependencies": {
 		"@pokebox/tsconfig": "workspace:*",
-		"@pokebox/button": "workspace:*"
+		"@pokebox/button": "workspace:*",
+		"@pokebox/utils": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18"

@@ -14,6 +14,12 @@ export type BasePokemonProps = {
 	};
 };
 
+export type PokemonStatProps = {
+	label: string;
+	value: number | string;
+	className?: string;
+};
+
 export type PokemonCardProps = BasePokemonProps & {
 	handleOnClick: () => void;
 };

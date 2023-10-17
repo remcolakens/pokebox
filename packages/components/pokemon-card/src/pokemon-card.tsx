@@ -1,5 +1,6 @@
 import { Button } from '@pokebox/button';
 import { FC } from 'react';
+import PokemonStat from './pokemon-stat';
 import type { PokemonCardProps } from './types';
 
 export const PokemonCard: FC<PokemonCardProps> = ({
@@ -15,36 +16,16 @@ export const PokemonCard: FC<PokemonCardProps> = ({
 			<div className="col-span-1 flex justify-center items-center">
 				<img src={image.src} alt={image.alt} className="w-40 object-cover" />
 			</div>
+
 			<div className="grid grid-cols-2 gap-4 col-span-1">
-				<div className="col-span-2">
-					<h4 className="font-bold">Name</h4>
-					<span>{name}</span>
-				</div>
-
-				<div>
-					<h4 className="font-bold">Hp</h4>
-					<span>{hp}</span>
-				</div>
-
-				<div>
-					<h4 className="font-bold">Attack</h4>
-					<span>{attack}</span>
-				</div>
-
-				<div>
-					<h4 className="font-bold">Special attack</h4>
-					<span>{specialAttack}</span>
-				</div>
-				<div>
-					<h4 className="font-bold">Special defense</h4>
-					<span>{specialDefense}</span>
-				</div>
-
-				<div>
-					<h4 className="font-bold">Speed</h4>
-					<span>{speed}</span>
-				</div>
+				<PokemonStat label="Name" value={name} className="col-span-2" />
+				<PokemonStat label="Hp" value={hp} />
+				<PokemonStat label="Attack" value={attack} />
+				<PokemonStat label="Special attack" value={specialAttack} />
+				<PokemonStat label="Special defense" value={specialDefense} />
+				<PokemonStat label="Speed" value={speed} />
 			</div>
+
 			<div className="w-full flex justify-center mt-8 col-span-1 md:col-span-2">
 				<Button
 					size="default"
