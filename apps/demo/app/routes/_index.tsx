@@ -57,10 +57,10 @@ export default function Index() {
 			<img
 				src="/pokebox-bg.png"
 				alt="pokebox background"
-				className="pointer-events-none h-full w-full object-cover absolute inset-0 brightness-75 -z-10"
+				className="pointer-events-none h-full w-full object-cover fixed inset-0 brightness-75 -z-10"
 			/>
 
-			<div className="container mx-auto">
+			<div className="container mx-auto mb-8">
 				<img
 					src="/pokebox-logo.png"
 					alt="pokebox logo"

@@ -26,7 +26,7 @@ export const PokemonCard: FC<PokemonCardProps> = ({
 				<PokemonStat label="Speed" value={speed} />
 			</div>
 
-			<div className="w-full flex justify-center mt-8 col-span-1 md:col-span-2">
+			<div className="flex justify-center mt-8 col-span-1 md:col-span-2">
 				<Button
 					size="default"
 					variant="default"
