@@ -5,6 +5,7 @@ build
 public
 *.hbs
 *.d.ts
+CODEOWNERS
 
 **/dist/**
 **/__tmp__/**
